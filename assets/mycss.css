@@ -1,0 +1,328 @@
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 50px;
+    text-align: center;
+    width: 100px;
+    vertical-align: middle;
+}
+
+.btn-circle.btn-xl {
+    /*width: 70px;
+    height: 70px;*/
+    width: 60px;
+    height: 60px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}/*
+#test{
+    background-image: url('img/ban.jpg');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+label{
+    margin-right: 15px;
+}*/
+hr{
+    width: 95% ;
+    font-weight: 25px;
+}
+#inp,#datid{
+    width: 95%;
+    margin: auto;
+}
+.mcol,.col-md-6{
+    margin-bottom: 15px;
+}
+#divres{
+    background-color: #f8f8f8;
+    padding-top: 2px;
+}
+.res{
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    margin-top: 8px;
+    padding: 3px;
+    /*text-align: center;
+    padding: 51px 15px 40px;*/
+    /**/-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+}
+#idver{
+    padding-top: 25px;
+    color: rgb(0,136,0);
+    font-size: 22px;
+}
+em{
+    font-size: 8px;
+}
+#span,#span2{
+    padding: 0;
+}
+#span2{
+    padding-left: 2px;
+    border-left: 1px solid #e5e5e5;
+}
+.span3{
+    font-size: 10px; color: rgb(191,191,191);
+}
+footer{
+    text-align: center;
+}
+footer a {
+    margin-right: 15px;
+}
+.searchdiv{
+    border: 1px solid rgb(221, 221, 221) !important;
+    border-radius: 32px !important;
+    color: rgb(34, 34, 34) !important;
+    display: flex !important;
+    height: 66px !important;
+    position: relative !important;
+    width: 85% !important; /*width: 100% !important;*/ margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 16px 32px, rgba(0, 0, 0, 0.1) 0px 3px 8px !important;
+    --big-search-form-background: #FFFFFF !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+.searchput{
+    -moz-box-align: center !important;
+    position: relative !important;
+    align-items: center !important;
+    display: flex !important;
+    flex: 1 0 0% !important;
+    margin: -1px !important;
+    min-width: 0px !important;
+}
+.lab{
+    cursor: pointer !important;
+    display: block !important;
+    background-clip: padding-box !important;
+    border: 1px solid transparent !important;
+    border-radius: 32px !important;
+    flex: 1 0 0% !important;
+    min-width: 0px !important;
+    padding: 14px 32px !important;
+}
+.lab1{
+    position: relative !important;
+    z-index: 1 !important;
+}
+.lab2{
+    font-weight: 800 !important;
+    letter-spacing: 0.04em !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    padding-bottom: 2px !important;
+}
+.put{
+    display: block !important;
+    border: 0px none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-weight: 600 !important;
+    color: rgb(34, 34, 34) !important;
+    text-overflow: ellipsis !important;
+}
+.lab:hover{
+    background-color: rgb(232,232,232);
+}
+.sep{
+    align-self: center !important;
+    border-right: 1px solid rgb(221, 221, 221) !important;
+    flex: 0 0 0px !important;
+    height: 32px !important;
+}
+.searchdat{
+    display: flex !important;
+    flex: 2 0 0% !important;
+    min-width: 0px !important;
+    position: relative !important
+}
+.searchbtn{
+    flex: 0 0 auto !important;
+    margin-left: -6px !important;
+    padding-right: 9px !important;
+    position: relative !important;
+    z-index: 5 !important;
+    padding:2px;
+}
+.sbtn,.sbtn1{
+    appearance: none !important;
+    background: rgb(255, 56, 92) none repeat scroll 0% 0% !important;
+    background-color: rgb(255, 56, 92);
+    border: 0px none !important;
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer !important;
+}
+.sbtn1{
+    float: right;
+}
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 70%; /*left: 0;*/
+  top: 100px; /*0;*/
+  width:30%;  /*width: 100%; Full width */
+  height:auto;  /*100%; Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /**background-color: rgb(0,0,0);**/ /* Fallback color */
+  /**background-color: rgba(0,0,0,0.4);**/ /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: red; /*#aaa;*/
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+.spam{
+    font-size: 12px; color: rgb(191,191,191);
+}
+.dmer { 
+    overflow:auto;
+} 
+.dfl {
+    float:left; 
+    width:65%;
+} 
+.dfi {
+    overflow:auto;
+} 
+.dfll {
+    float:left; 
+    width:55%;
+} 
+.dfii {
+    overflow:auto;
+} 
+.dml {
+    float:left; 
+    width:90%;
+} 
+.dmi {
+    overflow:auto;
+}
+#spadl,#spch,#spbab{
+    border: 0px none !important;
+    width:20px; text-align: center;
+}
+#spad,#spc,#spba{
+    border: 0px none !important;
+    width:20px; text-align: center;
+}
+.val{
+    color: rgb(0,136,0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.val:hover,
+.val:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#z:hover,#z1:hover,#z2:hover,#z3:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+.mrw{
+    margin-right: 15px; margin-left: 15px;
+}
+.dcont { 
+    overflow:auto; 
+    margin-right: 15px; 
+    margin-left: 15px;
+    margin-bottom: 5px;
+} 
+.d1 {
+    float:left; 
+    width:30%;
+    font-weight: 700;
+} 
+.d2 {
+    overflow:auto;
+}
+.dcont input{
+    width: 95%;
+}
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 10%;
+  top: 50px;
+  width: 80%;
+  height: auto; 
+  overflow: auto; /*
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); */
+}
+.modal1-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close1 {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

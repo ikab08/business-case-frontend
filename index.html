@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Gozem | Home</title>
+	<link rel="icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"  type="text/css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/mycss.css">
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-default navbar-static-top" id="mnav">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Navigation bar</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="verticalhorizontal"><a href="index.html"><img src="assets/img/glogo.png" ></a></div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Trip</a></li>
+              <li><a href="#">Hotel</a></li>
+              <li><a href="#">Holidays</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Help </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					 <button type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-user"></i></button> Login
+                </a>                
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sign up</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Sign in</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-language"></i> <span class="caret"></span>
+                </a>                
+                <ul class="dropdown-menu">
+                  <li><a href="#"><img src="assets/img/fr.png"> FR</a></li>
+                  <li><a href="#"><img src="assets/img/uk.png"> EN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+	<section class="container">
+		<div class="row hidden-xs hidden-sm">
+			<form action="#" enctype="multipart/form-data" id="form">
+			<div class="searchdiv">
+				<div class="searchput">
+					<label class="lab">
+						<div class="lab1">
+							<div class="lab2">From</div>
+							<input type="text" name="" class="put" placeholder="Eg: Cotonou" required="">
+						</div>
+					</label>
+				</div>
+				<div class="sep"></div>
+				<div class="searchput">
+					<label class="lab">
+						<div class="lab1">
+							<div class="lab2">To</div>
+							<input type="text" name="" class="put" placeholder="Eg: Lomé" required="">
+						</div>
+					</label>
+				</div>
+				<div class="sep"></div>
+				<div class="searchput">
+					<label class="lab">
+						<div class="lab1">
+							<div class="lab2">Depart date</div>
+							<input type="date" name="" class="put" required="">
+						</div>
+					</label>
+				</div>
+				<div class="sep"></div>
+				<div class="searchput">
+					<label class="lab">
+						<div class="lab1">
+							<div class="lab2">Arrival date </div>
+							<input type="date" name="" class="put" required="">
+						</div>
+					</label>
+				</div>
+				<div class="sep"></div>
+				<div class="searchput">
+					<label class="lab">
+						<div class="lab1">
+							<div class="lab2">Guests</div>
+							<input type="text" name="" class="put" id="myBtn" placeholder="Add" required="">
+						</div>
+					</label>
+				</div>
+				<div class="searchbtn">
+					<button type="submit" class="btn btn-default btn-circle btn-xl sbtn"><i class="fa fa-search"></i></button>
+				</div>
+			</div>
+			</form>
+		</div>
+		<div class="row visible-xs visible-sm">
+				<form action="#" enctype="multipart/form-data">
+					<div class="dcont">
+						<div class="d1">From</div> <div class="d2"><input type="text" name="" required="" placeholder="Eg: Cotonou"></div> 
+					</div>
+					<div class="dcont">
+						<div class="d1">To</div> <div class="d2"><input type="text" name="" required="" placeholder="Eg: Lomé"></div> 
+					</div>
+					<div class="dcont">
+						<div class="d1">Depart date</div> <div class="d2"><input type="date" name="" required=""></div> 
+					</div>
+					<div class="dcont">
+						<div class="d1">Arrival date</div> <div class="d2"><input type="date" name="" required=""></div> 
+					</div>
+					<div class="dcont">
+						<div class="d1">Guests</div> <div class="d2"><input type="text" name="" required="" id="myBtn1" placeholder="Add"></div> 
+					</div>
+					<div class="mrw">
+						<div id="fll">
+							<button type="submit" class="btn btn-default btn-md sbtn1"><i class="fa fa-search"></i> Search</button>
+						</div>						
+					</div>					
+				</form>
+		</div><br>
+			
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <!--span class="close">&times;</span-->
+				    <div class="dmer">
+				    	<div class="dfl">
+				    		<label>Adults</label> <br> 
+				    		<span class="spam">Over 13 years</span> 
+				    	</div>
+				    	<div class="dfi">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="minusA()"><i class="fa fa-minus"></i></button>
+				    		<input type="text" name="" id="spadl" value="0">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="plusA();"><i class="fa fa-plus"></i></button>
+				    	</div>
+				    </div><hr>
+				    <div class="dmer">
+				    	<div class="dfl">
+				    		<label>Children</label> <br> 
+				    		<span class="spam">From 2 to 13 years</span> 
+				    	</div>
+				    	<div class="dfi">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="minusC()"><i class="fa fa-minus"></i></button>
+				    		<input type="text" name="" id="spch" value="0">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="plusC()"><i class="fa fa-plus"></i></button>
+				    	</div>
+				    </div><hr>
+				    <div class="dmer">
+				    	<div class="dfl">
+				    		<label>Baby</label> <br> 
+				    		<span class="spam">Under 2 years</span> 
+				    	</div>
+				    	<div class="dfi">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="minusB()"><i class="fa fa-minus"></i></button>
+				    		<input type="text" name="" id="spbab" value="0">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="plusB()"><i class="fa fa-plus"></i></button>
+				    	</div>
+				    </div>
+				    <div class="dmer">
+				    	<div class="dml"><a type="button" class="val" onclick="guest()"><i class="fa fa-check"></i></a></div>
+				    	<div class="dmi"><span class="close"><i class="fa fa-close"></i></span></div>
+				    </div>
+				  <br> 
+				  </div>
+				</div> 
+				<!-- The Modal2 -->
+				<div id="myModal1" class="modal1">
+				  <!-- Modal content -->
+				  <div class="modal1-content">
+				    <!--span class="close">&times;</span-->
+				    <div class="dmer">
+				    	<div class="dfll">
+				    		<label>Adults</label> <br> 
+				    		<span class="spam">Over 13 years</span> 
+				    	</div>
+				    	<div class="dfii">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="minsA()"><i class="fa fa-minus"></i></button>
+				    		<input type="text" name="" id="spad" value="0">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="plsA();"><i class="fa fa-plus"></i></button>
+				    	</div>
+				    </div><hr>
+				    <div class="dmer">
+				    	<div class="dfll">
+				    		<label>Children</label> <br> 
+				    		<span class="spam">From 2 to 13 years</span> 
+				    	</div>
+				    	<div class="dfii">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="minsC()"><i class="fa fa-minus"></i></button>
+				    		<input type="text" name="" id="spc" value="0">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="plsC()"><i class="fa fa-plus"></i></button>
+				    	</div>
+				    </div><hr>
+				    <div class="dmer">
+				    	<div class="dfll">
+				    		<label>Baby</label> <br> 
+				    		<span class="spam">Under 2 years</span> 
+				    	</div>
+				    	<div class="dfii">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="minsB()"><i class="fa fa-minus"></i></button>
+				    		<input type="text" name="" id="spba" value="0">
+				    		<button type="button" class="btn btn-default btn-circle" onclick="plsB()"><i class="fa fa-plus"></i></button>
+				    	</div>
+				    </div>
+				    <div class="dmer">
+				    	<div class="dml"><a type="button" class="val" onclick="guests()"><i class="fa fa-check"></i></a></div>
+				    	<div class="dmi"><span class="close1"><i class="fa fa-close"></i></span></div>
+				    </div>
+				  <br> 
+				  </div>
+				</div> 
+				<!-- End Modal -->
+
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-2">
+						<label>Guests</label>
+					</div>
+					<div class="col-xs-4">
+						<select>
+							<option value="">-----</option>
+							<option value="1">1 Guests</option>
+							<option value="2">2 Guests</option>
+							<option value="3">3 Guests</option>
+							<option value="4" selected="">4 Guests</option>
+							<option value="5">5 Guests</option>
+							<option value="6">6 Guests</option>
+							<option value="7">7 Guests</option>
+							<option value="8">8 Guests</option>
+							<option value="9">9 Guests</option>
+							<option value="10">10 Guests</option>
+						</select> 
+					</div>
+					<div class="col-xs-6" style="text-align: right;">
+						<input type="button" id="btnmore" value="More filter" onclick="show()">
+					</div>
+				</div>
+
+				<div id="divid" style="display: none;">
+					<hr>
+					<div class="row">
+						<div class="col-sm-2">
+							<label>Itinerary</label>
+						</div>
+						<div class="col-sm-3 mcol">
+							<input type="text" id="inp" value="Singapore" readonly="">
+						</div>
+						<div class="col-sm-3 mcol">
+							<input type="text" id="inp" value="Bangkok" readonly="">
+						</div>
+						<div class="col-sm-4 mcol">
+							<input type="date" id="datid" value="2016-06-11" readonly="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+						</div>
+						<div class="col-sm-3 mcol">
+							<input type="text" id="inp" value="Bangkok" readonly="">
+						</div>
+						<div class="col-sm-3 mcol">
+							<input type="text" id="inp" value="Phuket" readonly="">
+						</div>
+						<div class="col-sm-4 mcol">
+							<input type="date" id="inp" value="2016-06-14" readonly="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+						</div>
+						<div class="col-sm-3 mcol">
+							<input type="text" id="inp" value="Phuket" readonly="">
+						</div>
+						<div class="col-sm-3 mcol">
+							<input type="text" id="inp" value="Singapore" readonly="">
+						</div>
+						<div class="col-sm-4 mcol">
+							<input type="date" id="inp" value="2016-06-18" readonly="">
+						</div>
+					</div>					
+				</div><br>
+
+				<div id="divres">
+					<div class="row res">
+						<div class="col-sm-2" id="idver">
+							$180
+						</div>
+						<div class="col-sm-10">
+							<div class="row" id="z">
+								<div class="col-sm-3 col-xs-3" id="span">
+									<button type="button" class="btn btn-danger btn-circle"><em>Air Asia</em></button> Air Asia 
+								</div>
+								<div class="col-sm-4 col-xs-4" id="span2">
+									10:10pm - 12:35pm <br>
+									<span id="sp3id" class="span3"></span>
+								</div>
+								<div class="col-sm-5 col-xs-5" id="span2">
+									2h 25 min <br>
+									<span class="span3"> Singapore (SIN) to Bangkok (DMK)</span>
+								</div>
+							</div><br>
+							<div class="row" id="z1">
+								<div class="col-sm-3 col-xs-3" id="span">
+									<button type="button" class="btn btn-danger btn-circle"><em>Air Asia</em></button> Air Asia 
+								</div>
+								<div class="col-sm-4 col-xs-4" id="span2">
+									10:10pm - 12:35pm <br>
+									<span id="sp3id1" class="span3"></span>
+								</div>
+								<div class="col-sm-5 col-xs-5" id="span2">
+									2h 25 min <br>
+									<span class="span3"> Singapore (SIN) to Bangkok (DMK)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row res">
+						<div class="col-sm-2" id="idver">
+							$180
+						</div>
+						<div class="col-sm-10">
+							<div class="row" id="z2">
+								<div class="col-sm-3 col-xs-3" id="span">
+									<button type="button" class="btn btn-danger btn-circle"><em>Air Asia</em></button> Air Asia 
+								</div>
+								<div class="col-sm-4 col-xs-4" id="span2">
+									10:10pm - 12:35pm <br>
+									<span id="sp3id2" class="span3"></span>
+								</div>
+								<div class="col-sm-5 col-xs-5" id="span2">
+									2h 25 min <br>
+									<span class="span3"> Singapore (SIN) to Bangkok (DMK)</span>
+								</div>
+							</div><br>
+							<div class="row" id="z3">
+								<div class="col-sm-3 col-xs-3" id="span">
+									<button type="button" class="btn btn-danger btn-circle"><em>Air Asia</em></button> Air Asia 
+								</div>
+								<div class="col-sm-4 col-xs-4" id="span2">
+									10:10pm - 12:35pm <br>
+									<span id="sp3id3" class="span3"></span>
+								</div>
+								<div class="col-sm-5 col-xs-5" id="span2">
+									2h 25 min <br>
+									<span class="span3"> Singapore (SIN) to Bangkok (DMK)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496115.3313016673!2d100.35290772129133!3d13.724441633428903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2sBangkok%2C%20Tha%C3%AFlande!5e0!3m2!1sfr!2sbj!4v1604573115578!5m2!1sfr!2sbj" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<hr>
+			<div class="row">
+				<div class="col-md-4">
+					© 2020 <a href="index.html">Gozem</a>
+					All rights reserved
+				</div>
+				<div class="col-md-4">
+					<a href="#">Terms and Conditions</a>  
+					<a href="#">Privacy policy</a> 
+				</div>
+				<div class="col-md-4">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>		
+	</footer>
+
+<script type="text/javascript">	
+	function minusA(){
+		var rec = $('#spadl').val(); var rec = parseInt(rec);
+		if (rec==0){
+			$('#spadl').val(rec);
+		}else{
+			var inter = rec - 1;
+			$('#spadl').val(inter);
+		}
+	}
+	function plusA(){
+		var rec = $('#spadl').val(); var rec = parseInt(rec);
+		var inter = rec + 1;
+		$('#spadl').val(inter);
+	}
+	function minusC(){
+		var rec = $('#spch').val(); var rec = parseInt(rec);
+		if (rec==0){
+			$('#spch').val(rec); 
+		}else{
+			var inter = rec - 1;
+			$('#spch').val(inter);
+		}
+	}
+	function plusC(){
+		var rec = $('#spch').val(); var rec = parseInt(rec);
+		var inter = rec + 1;
+		$('#spch').val(inter);
+	}
+	function minusB(){
+		var rec = $('#spbab').val(); var rec = parseInt(rec);
+		if (rec==0){
+			$('#spbab').val(rec);
+		}else{
+			var inter = rec - 1;
+			$('#spbab').val(inter);
+		}
+	}
+	function plusB(){
+		var rec = $('#spbab').val(); var rec = parseInt(rec);
+		var inter = rec + 1;
+		$('#spbab').val(inter);
+	}
+	function guest(){
+		var r0 = $('#spadl').val();var r1 = $('#spch').val();var r2 = $('#spbab').val();
+		var z = parseInt(r0)+parseInt(r1)+parseInt(r2);
+		if (z==0){
+			$('#myBtn').val();
+		}else{
+			$('#myBtn').val(z);
+		}
+		modal.style.display = "none";
+	}
+	function minsA(){
+		var rec = $('#spad').val(); var rec = parseInt(rec);
+		if (rec==0){
+			$('#spad').val(rec);
+		}else{
+			var inter = rec - 1;
+			$('#spad').val(inter);
+		}
+	}
+	function plsA(){
+		var rec = $('#spad').val(); var rec = parseInt(rec);
+		var inter = rec + 1;
+		$('#spad').val(inter);
+	}
+	function minsC(){
+		var rec = $('#spc').val(); var rec = parseInt(rec);
+		if (rec==0){
+			$('#spc').val(rec); 
+		}else{
+			var inter = rec - 1;
+			$('#spc').val(inter);
+		}
+	}
+	function plsC(){
+		var rec = $('#spc').val(); var rec = parseInt(rec);
+		var inter = rec + 1;
+		$('#spc').val(inter);
+	}
+	function minsB(){
+		var rec = $('#spba').val(); var rec = parseInt(rec);
+		if (rec==0){
+			$('#spba').val(rec);
+		}else{
+			var inter = rec - 1;
+			$('#spba').val(inter);
+		}
+	}
+	function plsB(){
+		var rec = $('#spba').val(); var rec = parseInt(rec);
+		var inter = rec + 1;
+		$('#spba').val(inter);
+	}
+	function guests(){
+		var modal1 = document.getElementById("myModal1");
+		var r0 = $('#spad').val();var r1 = $('#spc').val();var r2 = $('#spba').val();
+		var z = parseInt(r0)+parseInt(r1)+parseInt(r2);
+		if (z==0){
+			$('#myBtn1').val();
+		}else{
+			$('#myBtn1').val(z);
+		}
+		
+		modal1.style.display = "none";
+	}
+
+    function show(){
+        $('#divid').toggle();
+         var elt = $('#btnmore');
+        if (elt.val() == 'More filter') {
+            $('#btnmore').val('Less filter');
+        }else {
+            $('#btnmore').val('More filter');
+        }
+    }
+
+    //var d = new Date(); 
+    var dt = $('#datid').val();
+    var d = new Date(dt);
+    var nd = d.getDate();
+
+    var weekday = new Array(7);
+	weekday[0] = "Sun";
+	weekday[1] = "Mon";
+	weekday[2] = "Tue";
+	weekday[3] = "Wed";
+	weekday[4] = "Thu";
+	weekday[5] = "Fri";
+	weekday[6] = "Sat";
+	var nj = weekday[d.getDay()];
+
+	var month = new Array();
+	month[0] = "Jan";
+	month[1] = "Feb";
+	month[2] = "March";
+	month[3] = "Apr";
+	month[4] = "May";
+	month[5] = "Jun";
+	month[6] = "Jul";
+	month[7] = "Aug";
+	month[8] = "Sep";
+	month[9] = "Oct";
+	month[10] = "Nov";
+	month[11] = "Dec";
+	var nm = month[d.getMonth()];
+
+	var ret = nj.concat(' ').concat(nm).concat(' ').concat(nd);
+	$('#sp3id').html(ret); $('#sp3id1').html(ret); $('#sp3id2').html(ret); $('#sp3id3').html(ret);
+
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on the button, open the modal
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+
+	btn.onfocus = function() {
+	  modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	}
+
+	var modal1 = document.getElementById("myModal1");
+	var btn1 = document.getElementById("myBtn1");
+	var span1 = document.getElementsByClassName("close1")[0];
+	btn1.onclick = function() {
+	  modal1.style.display = "block";
+	}
+	btn1.onfocus = function() {
+	  modal1.style.display = "block";
+	}
+	span1.onclick = function() {
+	  modal1.style.display = "none";
+	}
+	window.onclick = function(event) {
+	  if (event.target == modal1) {
+	    modal1.style.display = "none";
+	  }
+	}
+
+} 
+</script>
+</body>
+
+</html>
